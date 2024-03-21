@@ -4,7 +4,16 @@
   justify-content: space-between;
 }
 
-.table-container {
+.grid-game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  height: 310px;
+  width: 310px;
+}
+
+.grid-game {
   display: grid;
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
@@ -15,9 +24,26 @@
 
 .field {
   display: flex;
-  border: 1px solid black;
   align-items: center;
   justify-content:center;
+}
+
+.field-00,
+.field-01,
+.field-10,
+.field-11 {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.field-02,
+.field-12 {
+  border-bottom: 1px solid black;
+}
+
+.field-20,
+.field-21 {
+  border-right: 1px solid black;
 }
 
 .player-turn-screen-container{

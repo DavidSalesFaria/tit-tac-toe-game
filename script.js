@@ -12,7 +12,7 @@
 // 1 | o | x |   |
 // 2 |   | o | x |
 
-let tableGame = [
+let gridGame = [
   ['', '', ''],
   ['', '', ''],
   ['', '', '']
@@ -66,8 +66,8 @@ function checkLines(){
     
     for (let j = 0; j < 3; j++){
     
-      if (tableGame[i][j]){
-        let simb = tableGame[i][j];
+      if (gridGame[i][j]){
+        let simb = gridGame[i][j];
         sameLineCount[simb].push([i, j]);
 
         if(sameLineCount.x.length === 3){
@@ -101,8 +101,8 @@ function checkColumns(){
 
     for (let i = 0; i < 3; i++){
     
-      if (tableGame[i][j]){
-        let simb = tableGame[i][j];
+      if (gridGame[i][j]){
+        let simb = gridGame[i][j];
         sameColumnCount[simb].push([i, j]);
 
         if(sameColumnCount.x.length === 3){
@@ -129,8 +129,8 @@ function checkLeftRight(){
 
   for (let ij = 0; ij < 3; ij++){
    
-    if (tableGame[ij][ij]){
-      let simb = tableGame[ij][ij];
+    if (gridGame[ij][ij]){
+      let simb = gridGame[ij][ij];
       leftRightCount[simb].push([ij, ij]);
     }
   }
@@ -150,8 +150,8 @@ function checkRightLeft(){
   let j = 2;
   for (let i = 0; i < 3; i++){
     
-    if (tableGame[i][j]){
-      let simb = tableGame[i][j];
+    if (gridGame[i][j]){
+      let simb = gridGame[i][j];
       rightLeftCount[simb].push([i, j]);
     }
     
@@ -216,8 +216,8 @@ function checkWinner(){
 
 
 function setField(simbol, row, col){
-  if (!tableGame[row][col]){
-    tableGame[row][col] = simbol;
+  if (!gridGame[row][col]){
+    gridGame[row][col] = simbol;
     console.log('Setado');
     return true;
   }
@@ -364,7 +364,7 @@ function restartGame(){
 
   gameIsRunning = false;
 
-  tableGame = [
+  gridGame = [
     ['', '', ''],
     ['', '', ''],
     ['', '', '']
