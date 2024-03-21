@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-tac-toe</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <script src="script.js" defer></script>
+
+  <section class="main-container">
+    <div class="table-container js-table-container">
+      <div class="field js-field" id="js-field-00" active=true></div>
+      <div class="field js-field" id="js-field-01" active=true></div>
+      <div class="field js-field" id="js-field-02" active=true></div>
+      <div class="field js-field" id="js-field-10" active=true></div>
+      <div class="field js-field" id="js-field-11" active=true></div>
+      <div  class="field js-field" id="js-field-12" active=true></div>
+      <div class="field js-field" id="js-field-20" active=true></div>
+      <div class="field js-field" id="js-field-21" active=true></div>
+      <div class="field js-field" id="js-field-22" active=true></div>
+    </div>
+    <aside class="player-turn-screen-container">
+      <p class="winner-alert js-winner-alert"></p>
+      <div class="player-turn-screen">
+      </div>
+    </aside>
+  </section>
+  <div class="button-container">
+    <button class="control-button js-start-button">Start</button>
+    <button class="control-button js-restart-button">Restart</button>
+    <button class="control-button js-reset-score-button">Reset Score</button>
+  </div>
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>Players</th>
+        <th>Wins</th>
+        <th>Looses</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>X</td>
+        <td class="js-x-wins"></td>
+        <td class="js-x-looses"></td>
+      </tr>
+      <tr>
+        <td>O</td>
+        <td class="js-o-wins"></td>
+        <td class="js-o-looses"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

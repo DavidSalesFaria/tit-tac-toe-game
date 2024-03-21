@@ -1,0 +1,93 @@
+.main-container {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  height: 300px;
+  width: 300px;
+
+}
+
+.field {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content:center;
+}
+
+.player-turn-screen-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.winner-alert{
+  font-size: 30px;
+}
+
+.player-turn-screen {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  border: 5px solid black;
+  height: 150px;
+  width: 150px;
+}
+
+.screen-simbol-icon {
+  width: 100px;
+}
+
+.screen-on {
+  background-color: white;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.control-button{
+  height: 100%;
+  width: 100%;
+}
+
+.toggled-button {
+  background-color: rgb(96, 96, 96);
+}
+
+
+.score-table {
+  width: 300px;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+.marked-field {
+  background-color: red;
+}
+
+.simbol-icon {
+  width: 50px;
+}
+
+
